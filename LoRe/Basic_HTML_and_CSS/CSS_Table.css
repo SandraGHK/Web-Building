@@ -1,0 +1,18 @@
+table	{
+	border: 3px solid blue;
+}
+td:hover	{
+	background-color: gray;
+	color: blue;
+}
+tr, th	{
+	background-color: purple;
+	color: white;
+}
+tr,td{
+	background-color: light gray;
+	color: black;
+}
+body	{
+	text-align: center;
+}
