@@ -1,0 +1,54 @@
+html {
+    font-family: Georgia;
+    font-size: 40px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 15px;
+    margin: 0;
+    font-family: Georgia;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.contact-container {
+    font-size: 30px;
+    outline: none;
+    font-weight: 600;
+    color: black;
+    padding: 2% 1% 2% 7%;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: lightgray;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-container[type="text"]:hover {
+    box-shadow: 0 0 18px rgba(100, 65, 0, 0.8);
+}
+
+.contact-input  {
+    font-size: 20px;
+    outline: black;
+    font-weight: 800;
+    text-align: center;
+    padding: 0;
+}
+.contact  {
+    font-size: 40px;
+    width: auto;
+    margin: 20px;
+    border: white;
+    border-radius: 4px;
+}
