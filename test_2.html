@@ -1,7 +1,20 @@
 <!DOCTYPE html>
-<html lang="en>
-	<head>
-		<title>This is practice</title>
-		<meta charset="UTF-8">
-	</head>
+<html lang="en">
+	<body>
+		<p id="Types_of_Fruit"></p>
+		<script>
+		function Fruit(Name, Type, Variety, Color)	{
+			this.Fruit_Name = Name;
+			this.Fruit_Type = Type;
+			this.Fruit_Variety = Variety;
+			this.Fruit_Color = Color;
+		}
+		var Blueberries= new Fruit("Blueberry", "Berry", "Bush", "Blue");
+		var Apples= new Fruit("Apple", "No-Rind", "Tree", "Red, Pink and Green");
+		var Oranges= new Fruit("Orange", "Citrus", "Tree", "Orange");
+		var Watermelons= new Fruit("Watermelon", "Rind", "Bush", "Green and Red")
+		document.getElementById("Types_of_Fruit").innerHTML="Oranges are a "+Oranges.Fruit_Color+" "+Oranges.Fruit_Type+" that grows on a "+Oranges.Fruit_Variety+"!";
+		</script>
+		
+	</body>
 </html>
