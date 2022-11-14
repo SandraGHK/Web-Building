@@ -6,11 +6,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./CSS/Portfolio.css">
+        <script type="text/javascript" src="./JS/Portfolio.js"></script>
     </head>
 
     <!-- Body -->
     <body class="Background">
-    
+       
         <!-- Navbar -->
         <div class="Navbar">
             <a class="active" href="#home">Home</a>
@@ -35,18 +36,20 @@
             <h1 class="white-text">Sandy's Portfolio</h1>
             <br>
             <strong>
-                <p class="center">
-                    <q>To me, programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge.
-                    </q>
-                    <br>
-                    <br>~Grace Hopper, Woman Computer Scientist, U.S. Navy
-                    <br>
-                    <br>
-                    <br>Hi, I am Sandy. Welcome to my portfolio website. It is a work in progress, as are all things, and will be updated constantly. Questions? Contact me below.
-                    <br>
-                    <br>
-                    <br>Thank you for stopping by and enjoy!
-                </p>
+                <div class="fade-In">
+                    <p class="center">
+                        <q>To me, programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge.
+                        </q>
+                        <br>
+                        <br>~Grace Hopper, Woman Computer Scientist, U.S. Navy
+                        <br>
+                        <br>
+                        <br>Hi, I am Sandy. Welcome to my portfolio website. It is a work in progress, as are all things, and will be updated constantly. Questions? Contact me below.
+                        <br>
+                        <br>
+                        <br>Thank you for stopping by and enjoy!
+                    </p>
+                </div>
             </strong>
         </div>
         <!-- About section -->
@@ -93,6 +96,7 @@
                     I live for finding solutions to problems by team effort and thinking outside the box.
                     <br>
                     <br>I am always down for some collaboration and brain-storming. 
+                    <br>
                     <br>Let's discuss over coffee, I'm buying.
                 </p>
             </div>
@@ -100,13 +104,15 @@
             <div class="Column_1 Column_tall">
                 <h1>Contact</h1>
                 <!-- This specifies where and how to send the form data; we are leaving it blank -->
-                <form action="https://formspree.io/f/mrgolqyv" method="POST">
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here.">
-                    <label>Email:</label>
-                        <input type="text" placeholder="Please enter your e-mail here.">
-                    <label>Message:</label>
-                        <input type="text" placeholder="Please write your message here.">
+                <form name="Contact_Form" action="https://formspree.io/f/mrgolqyv" onsubmit="return validateForm()" method="post">
+                    <label>Name:</label><br>
+                        <input type="text" name="Name" placeholder="Please enter your name here."><br>
+                    <label>Email:</label><br>
+                        <input type="e-mail" name="form_Field" placeholder="Please enter your e-mail here."><br>
+                    <label>Phone No:</label><br>
+                        <input type="tel" name="form_Field" placeholder="999..."><br>
+                    <label>Message:</label><br>
+                        <input type="text" name="form_Field" placeholder="Please write your message here."><br>
                         <input type="submit" value="SUBMIT">
                 </form>
             </div>
@@ -119,5 +125,27 @@
             </P>
         </footer>
     </body>
+
+    <!-- A button to open the popup form -->
+    <button class="open-button" onclick="openForm()">Contact Me</button>
+    
+    <!-- The form -->
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Contact</h1>
+
+            <label for="Name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+            
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+    
+            <label for="Phone"><b>Telephone No.</b></label>
+            <input type="tel" placeholder="Enter Telephone #" name="telephone #">
+    
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
 
 </html>
